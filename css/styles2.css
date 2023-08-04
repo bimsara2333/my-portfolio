@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Style the header with a background color and padding */
+#portfolio .position-relative {
+    padding: 20px;
+}
+
+/* Style the header text (Gallery and My Projects) */
+#portfolio .display-1 {
+    font-size: 8rem;
+}
+
+#portfolio .position-absolute {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Style the filter buttons */
+#portfolio #portfolio-flters {
+    list-style: none;
+    padding: 0;
+}
+
+#portfolio #portfolio-flters li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+#portfolio #portfolio-flters li.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style the portfolio item containers */
+#portfolio .portfolio-item {
+    position: relative;
+}
+
+/* Style the portfolio item images */
+#portfolio .portfolio-item img {
+    transition: transform 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Style the portfolio item captions */
+#portfolio .portfolio-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 123, 255, 0.8);
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+}
+
+/* Style the portfolio item caption text */
+#portfolio .portfolio-btn p {
+    font-size: 14px;
+}
+
+/* Style the portfolio item caption title */
+#portfolio .portfolio-btn h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#p1{
+    text-align: center;
+    color: rgb(21, 23, 86);
+}
